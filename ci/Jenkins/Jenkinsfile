@@ -30,8 +30,7 @@ pipeline {
     }
     stage('Build and Push Docker Image') {
       environment {
-        // REMPLACE 'ton_pseudo_dockerhub' ci-dessous par ton vrai pseudo DockerHub
-        DOCKER_IMAGE = "ton_pseudo_dockerhub/demo-java-app:${build_version}"
+        DOCKER_IMAGE = "segoleneDomche/demo-java-app:${build_version}"
       }
       steps {
         script {
