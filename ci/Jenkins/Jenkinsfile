@@ -30,7 +30,7 @@ pipeline {
     }
     stage('Build and Push Docker Image') {
       environment {
-        DOCKER_IMAGE = "segoleneDomche/demo-java-app:${build_version}"
+        DOCKER_IMAGE = "segolenedomche/demo-java-app:${build_version}"
       }
       steps {
         script {
